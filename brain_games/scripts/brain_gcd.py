@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.games import even
+from brain_games.games import gcd
 from brain_games import play_game
 
 
 def main():
-    play_game(even)
+    play_game(gcd)
 
 
 if __name__ == '__main__':
