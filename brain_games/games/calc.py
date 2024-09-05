@@ -1,7 +1,7 @@
 import random
 
 
-RULES = 'What is the result of the expression'
+RULES = 'What is the result of the expression?'
 
 
 def train_brain():

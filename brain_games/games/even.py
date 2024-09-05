@@ -1,7 +1,7 @@
 import random
 
 
-RULES = 'Answer "yes" if the number is even, otherwise anser "no".'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def train_brain() -> str:
