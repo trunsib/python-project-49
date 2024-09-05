@@ -1,19 +1,23 @@
-from random import randint
+from random import random, randint
 
 
-def generate_progression():
-    random_list = [randint(0, 50)]
-    step = randint(2, 30)
-    for i in range(0, randint(4, 10)):
-        random_list.append(random_list[i] + step)
-    return random_list
+RULES = 'What number is missing in the progression?'
 
 
-def play():
-    progression_list = generate_progression()
-    index = randint(0, len(progression_list) - 1)
-    correct_answer = progression_list[index]
-    progression_list[index] = '..'
-    progression_stroke = ' '.join(str(elem) for elem in progression_list)
-    question = f'Question: {progression_stroke}'
-    return question, str(correct_answer)
+def progression_game():
+    start = random.randint(1, 100)
+    step = random.randint(1, 10)
+    total_lenght = 10
+    secret_position = random.randint(total_lenght)
+    progression = get_progression(start, step, total_lenght)
+    answer = progression[secret_position]
+    progression[secret_position] = '..'
+    game = " ".join(progression)
+    return answer, game
+
+
+def get_progression(start, step, lenght):
+    progression = []
+    for i in range(lenght):
+        progression.append(str(start + step * i))
+    return progression

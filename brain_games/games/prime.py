@@ -1,19 +1,20 @@
-from random import randint
+from random import random, randint
 
 
-RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def prime_game():
+    number = random.randint(1, 100)
+    game = number
+    answer = 'yes' if is_prime(number) else 'no'
+    return answer, game
 
 
 def is_prime(num):
-    if num == 2:
-        return True
-    for divider in range(2, num):
-        if num % divider == 0:
+    i = 1
+    while i <= num:
+        if num % i == 0 and num != i and i !=1:
             return False
+        i += 1
     return True
-
-
-def play():
-    num = randint(2, 100)
-    question = f'Question: {num}'
-    return (question, 'yes') if is_prime(num) else (question, 'no')

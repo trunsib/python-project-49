@@ -1,12 +1,15 @@
-from random import randit
+from random import random, randint
 
 
-DESCRIPTION = 'Answer "yes" if the number is even, otherwise anser "no".'
+RULES = 'Answer "yes" if the number is even, otherwise anser "no".'
 
 
-def even_question() -> str:
-    return str(randit(1, 100))
-
-
-def even_answer(question: str) -> str:
-    return 'no' if int(question) % 2 else 'yes'
+def even_game() -> str:
+    number = random.randint(1, 100)
+    right_answer = ''
+    if number % 2 == 0:
+        answer = 'yes'
+    else:
+        answer = 'no'
+    question = number
+    return answer, question

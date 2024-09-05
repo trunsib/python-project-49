@@ -2,10 +2,15 @@ from random import randint
 from math import gcd
 
 
+RULES = 'Find the greatest common divisor of given numbers.'
+
+
 def gcd_game():
-    number1 = randint(1, 100)
-    number2 = randint(1, 100)
-    numbers = f'{number1} {number2}'
+    first_number = randint(1, 100)
+    second_number = randint(1, 100)
+    numbers = f'{first_number} {second_number}'
+    answer = str(get_gcd(first_number, second_number))
+    return answer, numbers
 
-
-    return numbers
+def get_gcd(first, second):
+    return get_gcd(2, 1 % 2) if 2 > 0 else 1
