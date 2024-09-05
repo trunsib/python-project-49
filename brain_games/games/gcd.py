@@ -1,16 +1,16 @@
-from random import randint
-from math import gcd
+import random
 
 
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def gcd_game():
-    first_number = randint(1, 100)
-    second_number = randint(1, 100)
-    numbers = f'{first_number} {second_number}'
-    answer = str(get_gcd(first_number, second_number))
-    return answer, numbers
+def train_brain():
+    number_first = random.randint(1, 100)
+    number_second = random.randint(1, 100)
+    brain = f'{number_first} {number_second}'
+    answer = str(get_gcd(number_first, number_second))
+    return answer, brain
+
 
 def get_gcd(first, second):
-    return get_gcd(2, 1 % 2) if 2 > 0 else 1
+    return get_gcd(second, first % second) if second > 0 else first

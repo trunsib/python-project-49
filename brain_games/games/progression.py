@@ -1,19 +1,19 @@
-from random import random, randint
+import random
 
 
 RULES = 'What number is missing in the progression?'
 
 
-def progression_game():
+def train_brain():
     start = random.randint(1, 100)
     step = random.randint(1, 10)
     total_lenght = 10
-    secret_position = random.randint(total_lenght)
+    secret_position = random.randint(1, total_lenght -1)
     progression = get_progression(start, step, total_lenght)
     answer = progression[secret_position]
     progression[secret_position] = '..'
-    game = " ".join(progression)
-    return answer, game
+    brain = " ".join(progression)
+    return answer, brain
 
 
 def get_progression(start, step, lenght):

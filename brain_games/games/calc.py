@@ -1,19 +1,19 @@
-from random import randint, choice, random
+import random
 
 
 RULES = 'What is the result of the expression'
 
 
-def calc_game():
-    number1 = randint(1, 100), randint(1, 100)
-    number2 = randint(1, 100), randint(1, 100)
+def train_brain():
+    number1 = random.randint(1, 100)
+    number2 = random.randint(1, 100)
     operators = random.choice(['-', '+', '*'])
-    right_answer = ''
+    answer = ''
     if operators == '-':
-        right_answer = number1 - number2
+        answer = number1 - number2
     elif operators == '+':
-        right_answer = number1 + number2
+        answer = number1 + number2
     elif operators == '*':
-        right_answer = number1 * number2
-    question = f'{number1} {operators} {number2}'
-    return right_answer, question
+        answer = number1 * number2
+    brain = f'{number1} {operators} {number2}'
+    return answer, brain

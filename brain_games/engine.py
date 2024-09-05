@@ -4,7 +4,7 @@ import prompt
 ROUNDS_COUNT = 3
 
 
-def start(game):
+def play_game(game):
     print('Welcome to the Brain Games!\n'
           'May I have your name? ', end='')
     name = input()
@@ -12,18 +12,17 @@ def start(game):
     print(game.RULES)
 
     for i in range(ROUNDS_COUNT):
-        right_answer, question = game.get_question()
+        answer, brain = game.train_brain()
 
-        print(f'Question: {question}')
+        print(f'Question: {brain}')
         user_answer = prompt.string('Your answer: ')
 
-        if str(user_answer) == str(right_answer):
+        if str(user_answer) == str(answer):
             print('Correct!')
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was"
-                  f" '{right_answer}'."
+                  f" '{answer}'."
                   f"\nLet's try again, {name}!")
             return
 
     print(f'Congratulations, {name}!')
-    
