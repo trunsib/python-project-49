@@ -8,7 +8,7 @@ def train_brain():
     start = random.randint(1, 100)
     step = random.randint(1, 10)
     total_lenght = 10
-    secret_position = random.randint(1, total_lenght -1)
+    secret_position = random.randint(1, total_lenght - 1)
     progression = get_progression(start, step, total_lenght)
     answer = progression[secret_position]
     progression[secret_position] = '..'
