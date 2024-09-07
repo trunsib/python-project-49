@@ -10,16 +10,16 @@
 Этот проект содержит в себе пять простых игр математической направленности.
 
 Игра "КАЛЬКУЛЯТОР"
-https://asciinema.org/a/sLJv5TLdQBTwdwnQdyFtuosvh
+[![asciicast]https://asciinema.org/a/sLJv5TLdQBTwdwnQdyFtuosvh]
 
 Игра "ПРОВЕРКА НА ЧЁТНОСТЬ"
-https://asciinema.org/a/xpW5LRE76stwEq9tuIDEzOsVQ
+[![asciicast]https://asciinema.org/a/xpW5LRE76stwEq9tuIDEzOsVQ]
 
 Игра "НАИБОЛЬШИЙ ОБЩИЙ ДЕЛИТЕЛЬ (НОД)"
-https://asciinema.org/a/xiVfkJwXBD1wey2GYyVMpcWvD
+[![asciicast]https://asciinema.org/a/xiVfkJwXBD1wey2GYyVMpcWvD]
 
 Игра "АРИФМЕТИЧЕСКАЯ ПРОГРЕССИЯ"
-https://asciinema.org/a/IZzD7e5Ui5YhkNFydG9WI9T0F
+[![asciicast]https://asciinema.org/a/IZzD7e5Ui5YhkNFydG9WI9T0F]
 
 Игра "ПРОСТОЕ ЛИ ЧИСЛО?"
-https://asciinema.org/a/XNpOZkl8kVMJQZaeIbMsvb0Id
+[![asciicast]https://asciinema.org/a/XNpOZkl8kVMJQZaeIbMsvb0Id]
