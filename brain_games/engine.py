@@ -17,12 +17,11 @@ def play_game(game):
         print(f'Question: {brain}')
         user_answer = prompt.string('Your answer: ')
 
-        if str(user_answer) == str(answer):
-            print('Correct!')
-        else:
+        if str(user_answer) != str(answer):
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was"
                   f" '{answer}'."
                   f"\nLet's try again, {name}!")
-            return
-
-    print(f'Congratulations, {name}!')
+            break
+        print('Correct!')
+    else:
+        print(f'Congratulations, {name}!')
