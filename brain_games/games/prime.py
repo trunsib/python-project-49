@@ -12,6 +12,8 @@ def train_brain():
 
 
 def is_prime(num):
+    if num <= 1:
+        return False
     i = 1
     while i <= num:
         if num % i == 0 and num != i and i != 1:
